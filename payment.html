@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата — Профессиональная библиотека косметолога</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="payment-page">
+    <div class="container">
+        <div class="payment-card">
+            <div class="payment-header">
+                <span class="back-link"><a href="index.html">← Назад</a></span>
+                <h1>💳 Оплата доступа</h1>
+            </div>
+
+            <div class="payment-body">
+                <div class="order-summary">
+                    <h3>Ваш заказ</h3>
+                    <div class="order-item">
+                        <span>Профессиональная библиотека косметолога</span>
+                        <span>4990 ₽</span>
+                    </div>
+                    <div class="order-total">
+                        <span>Итого</span>
+                        <span>4990 ₽</span>
+                    </div>
+                </div>
+
+                <div class="payment-form">
+                    <h3>Способ оплаты</h3>
+                    <div class="payment-methods">
+                        <label class="method-card">
+                            <input type="radio" name="method" value="card" checked>
+                            <span>💳 Банковская карта</span>
+                        </label>
+                        <label class="method-card">
+                            <input type="radio" name="method" value="sberpay">
+                            <span>🏦 СберПэй</span>
+                        </label>
+                        <label class="method-card">
+                            <input type="radio" name="method" value="yoomoney">
+                            <span>💰 ЮMoney</span>
+                        </label>
+                    </div>
+
+                    <div class="card-details">
+                        <div class="form-group">
+                            <label>Номер карты</label>
+                            <input type="text" placeholder="1234 5678 9012 3456" class="card-input" id="cardNumber">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label>Срок действия</label>
+                                <input type="text" placeholder="ММ/ГГ" class="card-input" id="cardExpiry">
+                            </div>
+                            <div class="form-group half">
+                                <label>CVC/CVV</label>
+                                <input type="text" placeholder="123" class="card-input" id="cardCvc">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-pay" id="payButton">Оплатить 4990 ₽</button>
+                    <p class="secure">🔒 Все данные защищены. Платёж проходит через безопасное соединение.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
